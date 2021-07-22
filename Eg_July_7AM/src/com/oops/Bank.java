@@ -1,8 +1,10 @@
 package com.oops;
 
-public class Bank {
-	public int accNo;
-	public String accName;
+import java.io.Serializable;
+
+public class Bank implements Serializable{
+	private int accNo;
+	private String accName;
 	private float balance;
 	
 	public Bank(int accNo, String accName, float balance) {
@@ -19,6 +21,22 @@ public class Bank {
 		this.balance = this.balance + balance;
 	}
 	
+	public int getAccNo() {
+		return accNo;
+	}
+	
+	public void setAccNo(int accNo) {
+		this.accNo = accNo;
+	}
+	
+	public String getAccName() {
+		return accName;
+	}
+	
+	public void setAccName(String accName) {
+		this.accName = accName;
+	}
+	
 	public void withdraw(int amount){
 		if(amount <= balance) {
 		balance -= amount;
@@ -28,5 +46,7 @@ public class Bank {
 			System.out.println("Transaction Diclained, No Funds...");
 		
 	}
+	
+	//public abstract void m1() ;
 	
 }
