@@ -1,0 +1,45 @@
+Q2: We have an array of 15 numbers. Write test cases to find out how many of them are positive, how many are negative, how many are even and how many odd.
+
+Assignment 1: 
+ - Create a class StringDemo
+ - Create a field as input in StringDemo
+ - Create appropriate getter and constructor method
+ - Create getRequiredData(String input) method that should return the provided String unchanged
+ - For example you have input as “Java Test” then it should return Java Test string as it is, if nothing is provided then “there is no String” should be returned.
+ 
+Assignment 2: 
+ - Create a class Employee
+ - Create fields like firstName, lastName, company and role
+ - Create a method, generatePassword(), it should return the generated password
+ - Create a Test class as EmployeeTest
+ - If all entries are properly provided, password should be generated as (it should take first two characters from each type, like firstname,lastname,company and role : example: firstName-pankaj, lastName-sharma, company-yash, role-trainer, then password should be as pashyatr)
+ 
+ Q6: Create a class called Employee that contains a name and employeeid. Include the member functions as getData() and putData() respectively for getting and displaying values. Write a main class to exercise Employee class. it should create the array of type employee and then allow the user to input the data for 10 employees, ask user to enter the employee id and display the information of the entered employee id.
+
+
+Prerequisite : 
+   - Basic knowledge of creating a Java class.
+   - Creation of arrays in Java.
+
+
+Class & Object Assignments:
+---------------------------
+Q1: Create a class that imitates part of the functionality of the basic data type int. Call the class Int (note different capitalization). The only data in this class is an int variable.Include member functions to initialize an Int to 0, to initialize it to an int value, to display it (it looks just like an int), and to add two Int values.
+Write a program that exercises this class by creating one uninitialized and two initialized Int values, adding the two initialized values and placing the response in the uninitialized value, and then displaying this result.
+
+Q3: Create a class called Time that has separate int member data for hours, minutes, and seconds. One constructor should initialize this data to 0, and another should initialize it to fixed values. Another member function should display it, in 11:59:59  (12 hours )format. The final member function should add two objects of type time passed as arguments.
+A main() program should create two initialized time objects (should they be const?) and
+one that isn’t initialized. Then it should add the two initialized values together, leaving the result in the third time variable. Finally it should display the value of this third variable. Make appropriate member functions const.
+
+eg: 1st obj value :-  10:30:45 (hours:minutes:seconds)
+    2nd obj value :-  7:15:15
+	Output        :-  17:46:00
+	
+	
+Q5: Create a class of type JoinDate that contains three members: the month, the day of the month, and the year, all of type int. (Or use day-month-year order if you prefer. It should also have two member functions: getdate(), which allows the user to enter a date in 12/31/02 format, and showdate(), which displays the date.
+    
+Q6. Make a Parent class Currency. 
+	1.1 Make Rupee, Dollar and Euro as the subclasses. Make conversion method as a base method in Currency class. 
+	1.2 Override this conversion method in all the other classes (Rupee, Dollar & Euro).
+	1.3 Make a parameterized constructor in individual derived subclasses which takes amount, as parameters and does the required conversion.
+	1.4 Make another class “calculateCurrency” with overloaded parameterized constructors. These parameterized constructors take convertFrom, convertTo and Amount and calculates the currency.
