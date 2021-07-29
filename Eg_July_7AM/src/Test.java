@@ -15,9 +15,9 @@ public class Test {
 		//a1.m2();
 		System.out.println("**************");
 		B b1 = new B();
-		System.out.println(b1.x);
+		//System.out.println(b1.x);
 		System.out.println(b1.y);
-		b1.m1();
+		//b1.m1();
 		b1.m2();
 		
 		
